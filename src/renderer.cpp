@@ -19,14 +19,14 @@ void sr::render(sr::Model m)
             rm_vec4f p2 = screen_vertices.at(m.get_indices().at(i+1));
             rm_vec4f p3 = screen_vertices.at(m.get_indices().at(i+2));
 
-            td_drawLine(p1.v[0], p1.v[1], p3.v[0], p3.v[1], '.', TD_COLOR_CYAN, TD_COLOR_DEFAULT);
-            td_drawLine(p3.v[0], p3.v[1], p2.v[0], p2.v[1], '.', TD_COLOR_CYAN, TD_COLOR_DEFAULT);
-            td_drawLine(p2.v[0], p2.v[1], p1.v[0], p1.v[1], '.', TD_COLOR_CYAN, TD_COLOR_DEFAULT);
+            td_drawLine(p1.v[0], p1.v[1], p3.v[0], p3.v[1], '.', TD_COLOR_GREEN, TD_COLOR_DEFAULT);
+            td_drawLine(p3.v[0], p3.v[1], p2.v[0], p2.v[1], '.', TD_COLOR_GREEN, TD_COLOR_DEFAULT);
+            td_drawLine(p2.v[0], p2.v[1], p1.v[0], p1.v[1], '.', TD_COLOR_GREEN, TD_COLOR_DEFAULT);
         }
     }
 
     for (auto v: screen_vertices)
     {
-        td_drawPoint(v.v[0], v.v[1], '.', TD_COLOR_CYAN, TD_COLOR_DEFAULT);
+        td_drawPoint(v.v[0], v.v[1], '.', TD_COLOR_YELLOW, TD_COLOR_DEFAULT);
     }
 }
