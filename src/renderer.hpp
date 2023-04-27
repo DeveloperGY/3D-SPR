@@ -5,10 +5,11 @@
 #include <rotmatrix.h>
 
 #include "model.hpp"
+#include "camera.hpp"
 
 namespace sr
 {
-    void render(sr::Model m);
+    void render(sr::Model m, sr::Camera c);
 }
 
 #endif
